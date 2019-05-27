@@ -47,7 +47,7 @@
               <goal>wget</goal>
             </goals>
             <configuration>
-              <url>http://apache-drill.s3.amazonaws.com/files/sf-0.01_tpc-h_parquet.tgz</url>
+              <url>https://apache-drill.s3.amazonaws.com/files/sf-0.01_tpc-h_parquet.tgz</url>
               <outputFileName>tpch.tgz</outputFileName>
               <unpack>true</unpack>
               <outputDirectory>${project.build.directory}</outputDirectory>
@@ -130,9 +130,11 @@
       <url>https://oss.sonatype.org/content/groups/public</url>
       <snapshots>
         <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
       </snapshots>
       <releases>
         <enabled>true</enabled>
+        <checksumPolicy>fail</checksumPolicy>
       </releases>
     </pluginRepository>
   </pluginRepositories>
