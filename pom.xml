@@ -164,7 +164,8 @@
 
     <repository>
       <id>mapr-releases</id>
-      <url>https://repository.mapr.com/maven/</url>
+      <!-- ToDo DRILL-7270: move it to https -->
+      <url>http://repository.mapr.com/maven/</url>
       <releases>
         <enabled>true</enabled>
         <checksumPolicy>fail</checksumPolicy>
